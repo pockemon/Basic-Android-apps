@@ -1,0 +1,9 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Color primary will change the color of the Action Bar.-->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- colorButtonNormal will change the color of the Buttons. -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+</resources>
