@@ -1,85 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.example.android.justjava.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Quantity!"
-        android:textSize="40sp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="15dp" />
-
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.justjava.MainActivity">
 
-        <Button
-         android:id="@+id/plus_id"
-         android:layout_height="60dp"
-         android:layout_width="50dp"
-         android:text="+"
-         android:textSize="30sp"
-         android:layout_marginLeft="15dp"
-         android:layout_marginBottom="20dp"
-         android:onClick="increment"/>
+        <EditText
+            android:id="@+id/name_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textCapWords" />
 
         <TextView
-         android:id="@+id/quantity_text_view"
-         android:layout_width="wrap_content"
-         android:layout_height="wrap_content"
-         android:text="0"
-         android:textSize="30sp"
-         android:layout_marginLeft="30dp"
-         android:layout_marginRight="30dp"
-         android:layout_marginBottom="20dp"
-         android:textColor="@android:color/black"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toppings!"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp" />
 
-       <Button
-        android:id="@+id/minus_id"
-        android:layout_height="60dp"
-        android:layout_width="50dp"
-        android:text="-"
-        android:textSize="30sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="decrement"/>
+        <CheckBox
+            android:id="@+id/wipped_cream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Whipped Cream"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/Chocolate_Box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "Chocolate"
+            android:textSize="18sp"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity!"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+             android:id="@+id/plus_id"
+             android:layout_height="60dp"
+             android:layout_width="50dp"
+             android:text="+"
+             android:textSize="20sp"
+             android:layout_marginLeft="15dp"
+             android:layout_marginBottom="10dp"
+             android:onClick="increment"/>
+
+            <TextView
+             android:id="@+id/quantity_text_view"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="0"
+             android:textSize="20sp"
+             android:layout_marginLeft="30dp"
+             android:layout_marginRight="30dp"
+             android:layout_marginBottom="10dp"
+             android:textColor="@android:color/black"/>
+
+           <Button
+            android:id="@+id/minus_id"
+            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:text="-"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:onClick="decrement"/>
+
+        </LinearLayout>
+
+        <!--
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ORDER SUMMARY"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp" />
+
+        <TextView
+            android:id="@+id/order_summary_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$0"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@android:color/black"/>
+          -->
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Order"
+            android:textSize="20sp"
+            android:layout_marginLeft="15dp"
+            android:onClick="submitOrder"/>
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Price($5/coffee)"
-        android:textSize="40sp"
-        android:layout_marginBottom="20dp"
-        android:layout_marginLeft="15dp" />
-
-    <TextView
-        android:id="@+id/price_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="$0"
-        android:textSize="30sp"
-        android:layout_marginLeft="15dp"
-        android:layout_marginBottom="20dp"
-        android:textColor="@android:color/black"/>
-
-
-    <Button
-        android:id="@+id/button_id"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:text="Order"
-        android:textSize="30sp"
-        android:layout_marginLeft="15dp"
-        android:onClick="submitOrder"/>
-
-</LinearLayout>
+</ScrollView>
