@@ -1,5 +1,4 @@
-# Android-practice
-Practice code for android
+# Basic-Android-apps
 
 ## Apps Created
 * Court Counter App
