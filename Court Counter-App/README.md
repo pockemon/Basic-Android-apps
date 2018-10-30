@@ -1,4 +1,4 @@
-# Quantity Picker-App
+# Court Counter-App
 A simple court counter app which can be used in a basketball match to keep track of scores of both teams
 
 
