@@ -5,3 +5,4 @@
 * https://in.udacity.com/course/android-basics-data-storage--ud845
 * https://classroom.udacity.com/courses/ud851
 * https://codelabs.developers.google.com/codelabs/constraint-layout/#0
+* https://developer.android.com/reference/android/util/Log
