@@ -8,3 +8,5 @@
 * https://developer.android.com/reference/android/util/Log
 * https://stackoverflow.com/questions/309424/how-to-read-convert-an-inputstream-into-a-string-in-java
 * http://square.github.io/okhttp/
+* https://developer.android.com/guide/topics/permissions/overview
+* https://developer.android.com/reference/android/os/AsyncTask
