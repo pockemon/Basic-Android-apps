@@ -6,3 +6,5 @@
 * https://classroom.udacity.com/courses/ud851
 * https://codelabs.developers.google.com/codelabs/constraint-layout/#0
 * https://developer.android.com/reference/android/util/Log
+* https://stackoverflow.com/questions/309424/how-to-read-convert-an-inputstream-into-a-string-in-java
+* http://square.github.io/okhttp/
