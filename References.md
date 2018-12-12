@@ -10,3 +10,6 @@
 * http://square.github.io/okhttp/
 * https://developer.android.com/guide/topics/permissions/overview
 * https://developer.android.com/reference/android/os/AsyncTask
+* https://developer.android.com/topic/libraries/support-library/packages
+* https://stackoverflow.com/questions/52124454/failed-to-resolve-android-support-design28-0-0-rc02
+* https://stackoverflow.com/questions/29025961/setsupportactionbar-toolbar-cannot-be-applied-to-android-widget-toolbar-error
